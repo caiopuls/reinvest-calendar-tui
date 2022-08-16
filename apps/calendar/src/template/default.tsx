@@ -185,47 +185,47 @@ export const templates: Template = {
   },
 
   popupIsAllday() {
-    return 'All day';
+    return 'Todo o dia';
   },
 
   popupStateFree() {
-    return 'Free';
+    return 'Disponível';
   },
 
   popupStateBusy() {
-    return 'Busy';
+    return 'Ocupado';
   },
 
   titlePlaceholder() {
-    return 'Subject';
+    return 'Título';
   },
 
   locationPlaceholder() {
-    return 'Location';
+    return 'Local da reunião';
   },
 
   startDatePlaceholder() {
-    return 'Start date';
+    return 'Data de início';
   },
 
   endDatePlaceholder() {
-    return 'End date';
+    return 'Data de término';
   },
 
   popupSave() {
-    return 'Save';
+    return 'Salvar';
   },
 
   popupUpdate() {
-    return 'Update';
+    return 'Atualizar';
   },
 
   popupEdit() {
-    return 'Edit';
+    return 'Editar';
   },
 
   popupDelete() {
-    return 'Delete';
+    return 'Remover';
   },
 
   popupDetailTitle({ title }: EventObjectWithDefaultValues) {
@@ -233,7 +233,7 @@ export const templates: Template = {
   },
 
   popupDetailDate({ isAllday, start, end }: EventObjectWithDefaultValues) {
-    const dayFormat = 'YYYY.MM.DD';
+    const dayFormat = 'DD.MM.YYYY';
     const timeFormat = 'hh:mm tt';
     const detailFormat = `${dayFormat} ${timeFormat}`;
     const startDate = toFormat(start, isAllday ? dayFormat : timeFormat);
@@ -255,7 +255,7 @@ export const templates: Template = {
   },
 
   popupDetailState({ state }: EventObjectWithDefaultValues) {
-    return state || 'Busy';
+    return state || 'Ocupado';
   },
 
   popupDetailRecurrenceRule({ recurrenceRule }: EventObjectWithDefaultValues) {
